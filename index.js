@@ -1,8 +1,3 @@
-// =========================
-// USER AUTH
-// =========================
-
-// Redirect to login if not logged in (for protected pages)
 let user = JSON.parse(localStorage.getItem("loggedInUser"));
 
 function checkLogin() {
@@ -42,7 +37,7 @@ function registerUser(event) {
     window.location.href = "login.html";
 }
 
-// Attach signup event listener
+
 if (document.querySelector("#signup-btn")) {
     document.querySelector("#signup-btn").addEventListener("click", registerUser);
 }
@@ -72,7 +67,7 @@ function loginUser(event) {
     window.location.href = "dashboard.html";
 }
 
-// Attach login event listener
+
 if (document.querySelector("#login-btn")) {
     document.querySelector("#login-btn").addEventListener("click", loginUser);
 }
@@ -86,11 +81,7 @@ function logout() {
 
 
 
-// =========================
-// PRODUCT DATA
-// =========================
 
-// CLOTHING PRODUCTS
 const clothingProducts = [
     { id: 1, name: "Men's Polo T-Shirt", price: 399, category: "tshirts", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/r/k/q/m-polo-8014-kajaru-original-imahe7r5hnrpxthj.jpeg?q=70" },
     { id: 2, name: "Men's Slim Fit Jeans", price: 799, category: "jeans", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/c/m/q/28-mv-bl-3-markview-original-imahdeqsm3payngn.jpeg?q=70" },
@@ -108,10 +99,6 @@ const electronicsProducts = [
 ];
 
 
-
-// =========================
-// RENDER PRODUCTS
-// =========================
 
 function renderProducts(products, containerId) {
     const container = document.getElementById(containerId);
