@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+.navbar {
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-btn {
+  background: #0d6efd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero {
+  height: 260px;
+  background: url("https://img.freepik.com/premium-photo/online-shopping-background-with-icons-3d-design-banner_43525-3253.jpg") center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.auth-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 10px #999;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
