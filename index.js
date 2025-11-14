@@ -126,10 +126,6 @@ function renderProducts(products, containerId) {
 
 
 
-// =========================
-// CART SYSTEM
-// =========================
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Add to Cart
@@ -158,11 +154,6 @@ function loadCartCount() {
 
 loadCartCount();
 
-
-
-// =========================
-// RENDER CART PAGE
-// =========================
 
 function renderCartPage() {
     const cartContainer = document.querySelector("#cart-container");
@@ -195,12 +186,6 @@ function renderCartPage() {
 }
 
 renderCartPage();
-
-
-
-// =========================
-// SEARCH + FILTER
-// =========================
 
 const searchInput = document.getElementById("searchInput");
 const clothingCollection = document.getElementById("clothingCollection");
